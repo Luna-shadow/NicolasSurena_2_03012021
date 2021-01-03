@@ -8,6 +8,26 @@
     <title>Reservia</title>
 </head>
 <body>
-    <i class="fas fa-home"></i>
+   <header class="mainHeader">
+        <img src="medias/logo/Reservia@3x.png" alt="logo Réservia" class="mainHeader_logo">
+        <a href="#" class="mainHeader_sub">S'inscrire</a>   
+        <nav class="mainHeader_nav">
+            <ul class="mainHeader_nav_bloc">
+                <li class="mainHeader_nav_bloc_item mainHeader_item_selected"><a href="#" class="mainHeader_nav_bloc_item_item">Hébergements</a></li>
+                <li class="mainHeader_nav_bloc_item"><a href="#" class="mainHeader_nav_bloc_item_item">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainWrapper">
+        <!-- SEARCH -->
+        <section class="mainWrapper_search">
+            <h2 class="mainWrapper_search_catchphrase"></h2>
+            <p class="mainWrapper_search_subCatchphrase"></p>
+            <form action="reservia.html" method="get" class="mainWrapper_search_searchForm" id="mainSearchForm">
+                <i class="fas fa-map-marker-alt mainWrapper_search_searchForm_icone"></i>
+                <input type="text" name="searchLocation" id="">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
