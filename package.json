@@ -1,0 +1,23 @@
+{
+  "name": "p2_surena_nicolas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lune-atx/P2_surena_nicolas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lune-atx/P2_surena_nicolas/issues"
+  },
+  "homepage": "https://github.com/Lune-atx/P2_surena_nicolas#readme"
+}
