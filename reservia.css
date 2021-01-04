@@ -1,0 +1,191 @@
+/* 
+main grey : #F2F2F2
+main blue : #0065FC
+lieghten blue : #DEEBFF
+ */
+
+@font-face {
+    font-family: "raleway";
+    src: url("/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ralewayItalic";
+    src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: initial;
+    padding: initial;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-size: 16px;
+    font-family: 'raleway', 'arial', 'sans-serif';
+}
+a{
+    color: inherit;
+}
+/* HEADER */
+.mainHeader{
+    display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+.mainHeader-logo{
+    height: 3rem;
+    margin: 1.5rem ;
+}
+.mainHeader-sub{
+    color: #0065FC;
+    font-weight: 800;
+    margin: 1.5rem;
+}
+/* ---nav */
+.mainHeader-nav{    
+    width: 100%;
+}
+.mainHeader-nav-bloc{        
+    display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    width: 100%;
+}
+.mainHeader-nav-bloc-item{       
+    border-bottom: 0.2rem solid #F2F2F2;
+    font-weight: 500;
+    padding: 0.7rem;
+    text-align: center;
+    width: 50%;
+}
+.mainHeader-item-selected{
+    border-bottom: 0.2rem solid #0065FC;
+    color: #0065FC;
+}
+/* SEARCH */
+.mainWrapper-sort{
+    padding: 1rem 2rem;
+}
+.mainWrapper-sort-search{
+    padding: 1rem 0;
+}
+.mainWrapper-sort-search-catchphrase{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0.5rem 0;
+}
+.mainWrapper-sort-search-subCatchphrase{
+    margin: 1rem 0;
+}
+/* ---form */
+.mainWrapper-sort-search-searchForm{
+    display: flex;
+        align-items: stretch;
+        flex-direction: row;
+        justify-content: flex-start;
+    position: relative;
+    width: 100%;
+}
+.mainWrapper-sort-search-searchForm-icone{
+    background-color: #F2F2F2;
+    padding: 1.3rem 1.5rem;
+    border-radius:1rem 0 0 1rem;
+    -webkit-border-radius:1rem 0 0 1rem;
+    -moz-border-radius:1rem 0 0 1rem;
+    -ms-border-radius:1rem 0 0 1rem;
+    -o-border-radius:1rem 0 0 1rem;
+}
+.mainWrapper-sort-search-searchForm-input{
+    border: 0.1rem solid #F2F2F2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex: 1;
+    padding: 0 1rem;
+    margin-right: 3rem;
+}
+.mainWrapper-sort-search-searchForm-input::placeholder{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 1rem;   
+    opacity: 1;
+}
+.mainWrapper-sort-search-searchForm-submit{
+    border: none;
+    background-color:  #0065FC;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 0 1.2rem;
+    position: absolute;
+    top:0; right:0; bottom:0;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.mainWrapper-sort-filter-bloc{
+    margin: 1rem 0;
+}
+.mainWrapper-sort-filter-bloc-title{
+    margin: 1rem 0;
+}
+.mainWrapper-sort-filter-bloc-filterArea{
+    display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+}
+.mainWrapper-sort-filter-bloc-filterArea-item{
+    border: 0.2rem solid  #F2F2F2;
+    display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    position: relative;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.mainWrapper-sort-filter-bloc-filterArea-item-link-icone{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    height: 3.5rem;
+    position: absolute;
+    left:-0.2rem; top: -0.2rem; bottom: -0.2rem;
+    width: 3.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+/* DISPLAY */
+.desktop-display{
+    display: none;
+}
+@media screen and (min-width: 700px){
+    .desktop-display{
+        display: initial;
+    }
+    .mobile-display{
+        display: none;
+    }
+}
