@@ -18,6 +18,7 @@ lieghten blue : #DEEBFF
     box-sizing: border-box;
     margin: initial;
     padding: initial;
+    text-align: initial;
     text-decoration: none;
     list-style-type: none;
 }
@@ -178,11 +179,11 @@ a{
     -o-border-radius: 2rem;
 }
 .mainWrapper-sort-filter-info{
-    display: flex;
-        align-items: flex-start;
+    display: inline-flex;
+        align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: flex-start;
     margin: 2rem 0;
 }
 .mainWrapper-sort-filter-info-icone{
@@ -204,6 +205,7 @@ a{
 .mainWrapper-accomodation-aside{
     background-color: #F2F2F2;
     padding: 2rem;
+    text-align: center;
 }
 .mainWrapper-accomodation-aside-title{
     display: flex;
@@ -212,15 +214,22 @@ a{
     font-size: 2rem;
     margin: 2rem 0;
 }
+.mainWrapper-accomodation-aside-popularArea{
+    width: 100%;
+}
 .mainWrapper-accomodation-aside-popularArea-link{
     background-color: #ffffff;
     border: 0.4rem solid #ffffff;
     box-shadow: 0 0 1rem #cccccc;
-    display: block;
+    display: inline-flex;
+        align-items: stretch;
+        justify-content: stretch;
     height: 11rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 40rem;
     padding: 1rem 1rem 1rem 12rem;
     position: relative;
+    width: 100%;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -276,7 +285,6 @@ a{
 .mainWrapper-accomodation-results-title{
     font-size: 2rem;
     margin: 2rem 0;
-    padding-left: 2rem;
 }
 .mainWrapper-accomodation-results-accomodationArea-link{
     background-color: #ffffff;
@@ -332,12 +340,12 @@ a{
     display:flex;
         align-items: flex-start;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     height: 6.5rem;
 }
 .mainWrapper-accomodation-results-accomodationArea-link-content-title{
     font-size: 1.3rem;
-    margin-bottom: 0.3rem;
+    /* margin-bottom: 0.3rem; */
 }
 .mainWrapper-accomodation-results-accomodationArea-link-content-rate-star{
     color: #0065FC;
@@ -345,11 +353,205 @@ a{
 .mainWrapper-accomodation-results-accomodationArea-link-content-rate-star-empty{
     color: #F2F2F2;
 }
+.mainWrapper-accomodation-results-more{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+/* ACTIVITY */
+.mainWrapper-activity{
+    padding: 0 2rem;
+    margin: 3rem 0;
+}
+.mainWrapper-activity-bloc-title{
+    font-size: 2rem;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+.mainWrapper-activity-bloc-activityArea-link{
+    background-color: #ffffff;
+    box-shadow: 0 0 1rem #cccccc;
+    display: block;
+    height: 17rem;
+    margin: 2rem 0;
+    padding: 13.5rem 1rem 1rem 1rem;
+    position: relative;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.mainWrapper-activity-bloc-activityArea-link::after{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    right:0;
+    top:0;
+    height: 12rem;
+    left:0;
+    border-radius: 1rem 1rem 0 0;
+    -webkit-border-radius: 1rem 1rem 0 0;
+    -moz-border-radius: 1rem 1rem 0 0;
+    -ms-border-radius: 1rem 1rem 0 0;
+    -o-border-radius: 1rem 1rem 0 0;
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(1)::after{
+    background-image: url('medias/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(2)::after{
+    background-image: url('medias/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(3)::after{
+    background-image: url('medias/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(4)::after{
+    background-image: url('medias/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(5)::after{
+    background-image: url('medias/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(6)::after{
+    background-image: url('medias/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link-title{
+    font-weight: 700;
+}
+/* FOOTER */
+.footer{
+    background-color: #F2F2F2;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.footer-textArea{
+    margin: 2rem 0;
+}
+.footer-textArea-title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.footer-textArea-bloc-content{
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
 /* DISPLAY */
 .desktop-display{
-    display: none;
+    display: none;   
 }
 @media screen and (min-width: 700px){
+    
+    /* HEADER */
+    .mainHeader{
+        display: flex;
+            justify-content: center;
+            padding: 0 3rem;
+    }
+    .mainHeader-logo{
+        margin: initial;
+        order: 1;
+    }
+    .mainHeader-sub{
+       order: 3;
+    }
+    /* ---nav */
+    .mainHeader-nav{ 
+        margin-left: auto;
+        order: 2;   
+        width: initial;
+    }
+    .mainHeader-nav-bloc-item{       
+        border-bottom: none;        
+        padding: 2rem;
+        width: initial;
+    }
+    .mainHeader-item-selected{
+        border-bottom: none;  
+        border-top: 0.2rem solid #0065FC; 
+    }
+    /* SEARCH */
+    .mainWrapper-sort{
+        padding: 0 2rem;
+    }
+    .mainWrapper-sort-search{
+        padding: initial;
+    }
+    .mainWrapper-sort-search-catchphrase{
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: initial;
+    }
+    .mainWrapper-sort-search-subCatchphrase{
+        margin: 1rem 0;
+    }
+    /* ---form */
+    .mainWrapper-sort-search-searchForm{
+        margin: 2rem 0;
+        width: 40rem;
+    }
+    .mainWrapper-sort-filter-bloc{
+        margin:initial;
+    }
+    .mainWrapper-sort-filter-info{
+        margin: 1.5rem 0;
+    }
+
+
+
+
+
+    
+    /* RECOMMENDATIONS */    
+    .mainWrapper-accomodation-aside-popularArea{
+        margin: auto;
+        width: 50rem;
+    }
+    .mainWrapper-accomodation-aside-popularArea-link{
+        margin: 2rem;
+    }
+    .mainWrapper-accomodation-aside-popularArea-link::after{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        width: 10rem;
+        border-radius: 1rem 0 0 1rem;
+        -webkit-border-radius: 1rem 0 0 1rem;
+        -moz-border-radius: 1rem 0 0 1rem;
+        -ms-border-radius: 1rem 0 0 1rem;
+        -o-border-radius: 1rem 0 0 1rem;
+    }
+    .mainWrapper-accomodation-aside-popularArea-link:nth-of-type(1)::after{
+        background-image: url('medias/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    }
+    .mainWrapper-accomodation-aside-popularArea-link:nth-of-type(2)::after{
+        background-image: url('medias/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    }
+    .mainWrapper-accomodation-aside-popularArea-link:nth-of-type(3)::after{
+        background-image: url('medias/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+    }
+    .mainWrapper-accomodation-aside-popularArea-link-content{
+        display:flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+    }
+    .mainWrapper-accomodation-aside-popularArea-link-content-description-title{
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+    }
+    .mainWrapper-accomodation-aside-popularArea-link-content-rate-star{
+        color: #0065FC;
+    }
+    .mainWrapper-accomodation-aside-popularArea-link-content-rate-star-empty{
+        color: #F2F2F2;
+    }
+    /* DISPLAY */
     .desktop-display{
         display: initial;
     }
