@@ -575,17 +575,23 @@ a{
 }
 /* DESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOPDESKTOP 
 */
-@media screen and (min-width: 1300px){    
+@media screen and (min-width: 1350px){    
     /* RECOMMENDATIONS */    
-    .mainWrapper-accomodation{
+    .mainWrapper-accomodation{       
         display: flex;  
             align-items: stretch;
             flex-direction: row-reverse;
             justify-content: center;
     }
     .mainWrapper-accomodation-aside{
+        margin: 0 2rem;
         width: 35%;
-    }
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
     .mainWrapper-accomodation-aside-popularArea{
         margin: initial;
         width: 100%;
@@ -598,40 +604,39 @@ a{
     .mainWrapper-accomodation-aside-popularArea-link-content-description-title{
         font-size: 1.2rem;
     }
-    /* ACCOMODATION - nothing here*/ 
-    .mainWrapper-accomodation-results-accomodationArea-link{
-        height: 14rem;
-        padding: 8rem 0.5rem 0.5rem 0.5rem;
-        max-width: 17rem;
-    }
-    .mainWrapper-accomodation-results-accomodationArea-link::after{
-        height: 8rem;
-    } 
-    .mainWrapper-accomodation-results-accomodationArea-link-content{
-        height: 5.5rem;
-    }
-    .mainWrapper-accomodation-results-accomodationArea-link-content-title{
-        font-size: 1.2rem;
+    /* ACCOMODATION */ 
+    .mainWrapper-accomodation-results{
+        background-color: #F2F2F2;
+        margin: 0 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
     }
     /* ACTIVITY */
     .mainWrapper-activity{
         padding: initial;
     }
     .mainWrapper-activity-bloc-activityArea{
-        margin: auto;
-        max-width: 70rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 50rem;
+        margin: initial;
+        max-width: initial;
     }
     .mainWrapper-activity-bloc-activityArea-link{
-        margin: 1rem;
         max-width: initial;
+        width: calc()
     }
     .mainWrapper-activity-bloc-activityArea-link:nth-child(4n+1),
     .mainWrapper-activity-bloc-activityArea-link:nth-child(4n+4){
-        width: 55%;
+        width: initial;
     }
     .mainWrapper-activity-bloc-activityArea-link:nth-child(4n+2),
     .mainWrapper-activity-bloc-activityArea-link:nth-child(4n+3){
-        width: 35%;
+        width: initial;
     }    
     .mainWrapper-activity-bloc-activityArea-link-title{
         font-weight: 600;
