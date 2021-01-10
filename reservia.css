@@ -4,6 +4,13 @@ main blue : #0065FC
 lieghten blue : #DEEBFF
  */
 
+
+/* 
+ *
+ *Pour plus de fun, rdv L.145
+ *
+ */
+
 @font-face {
     font-family: "raleway";
     src: url("/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
@@ -138,11 +145,14 @@ a{
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-    transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
+
+    /* POUR UN PEU D'HUMOUR, LE DECOMMENTER. HS AVEC LA MAQUETTE MAIS RAJOUTE UNE TOUCHE DE FUN => + L.530 */
+    
+    /* transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
     -webkit-transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
     -moz-transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
     -ms-transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
-    -o-transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
+    -o-transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s; */
 }
 .mainWrapper-sort-filter-bloc{
     margin: 1rem 0;
@@ -524,19 +534,16 @@ a{
     .mainWrapper-sort-search-searchForm{
         margin: 2rem 0;
         width: 40rem;
-    }
-    .mainWrapper-sort-search-searchForm:hover{
-        margin-right: 1000rem;
-    }
-    .mainWrapper-sort-search-searchForm:hover .mainWrapper-sort-search-searchForm-submit{
+    }  
+    /* .mainWrapper-sort-search-searchForm:hover .mainWrapper-sort-search-searchForm-submit{
         background-color: #dd00ff;
         right: 50rem;
-        transform: rotate(1080deg);
-        -webkit-transform: rotate(1080deg);
-        -moz-transform: rotate(1080deg);
-        -ms-transform: rotate(1080deg);
-        -o-transform: rotate(1080deg);
-}   
+        transform: rotate(12000deg);
+        -webkit-transform: rotate(12000deg);
+        -moz-transform: rotate(12000deg);
+        -ms-transform: rotate(12000deg);
+        -o-transform: rotate(12000deg);
+    }    */
     .mainWrapper-sort-filter-bloc{
         margin:initial;
     }
