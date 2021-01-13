@@ -11,8 +11,8 @@ lieghten blue : #DEEBFF
  *
  */
 
+ /* OLD VERSION : 454*/
 
- /* lire le READ ME pour les font-face */
 @font-face {
     font-family: "raleway";
     src: url("/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
@@ -68,7 +68,7 @@ a{
 }
 .mainHeader-nav-bloc-item{
     border-bottom: 0.2rem solid #F2F2F2;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0.7rem;
     text-align: center;
     width: 50%;
@@ -152,7 +152,7 @@ a{
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
 
-    /* POUR UN PEU D'HUMOUR, LE DECOMMENTER. HS AVEC LA MAQUETTE MAIS RAJOUTE UNE TOUCHE DE FUN => + L.582 */
+    /* POUR UN PEU D'HUMOUR, LE DECOMMENTER. HS AVEC LA MAQUETTE MAIS RAJOUTE UNE TOUCHE DE FUN => + L.627 */
 
     /* transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
     -webkit-transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
@@ -450,7 +450,7 @@ a{
         flex-wrap: wrap;
         justify-content: center;
 }
-.mainWrapper-activity-bloc-activityArea-link{
+/* .mainWrapper-activity-bloc-activityArea-link{
     background-color: #ffffff;
     box-shadow: 0 0 1rem #cccccc;
     display: block;
@@ -501,6 +501,53 @@ a{
 }
 .mainWrapper-activity-bloc-activityArea-link-title{
     font-weight: 700;
+} */
+.mainWrapper-activity-bloc-activityArea-link{
+    box-shadow: 0 0 1rem #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+    height: 17rem;
+    margin: 1rem 0;
+    width: 100%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(1){
+    background-image: url('medias/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(2){
+    background-image: url('medias/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(3){
+    background-image: url('medias/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(4){
+    background-image: url('medias/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(5){
+    background-image: url('medias/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link:nth-of-type(6){
+    background-image: url('medias/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+}
+.mainWrapper-activity-bloc-activityArea-link-title{
+    background-color: #ffffff;
+    font-weight: 700;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    -webkit-border-radius: 0 0 1rem 1rem;
+    -moz-border-radius: 0 0 1rem 1rem;
+    -ms-border-radius: 0 0 1rem 1rem;
+    -o-border-radius: 0 0 1rem 1rem;
 }
 /* FOOTER */
 .footer{
@@ -765,38 +812,18 @@ a{
         width: calc((100% / 4) - 2rem);    
     }   
     .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+1),    
-    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+4){
-        padding-top: 32.5rem;
+    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+4){        
         height: 100%;
     }
-    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+1)::after,
-    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+4)::after{
-        height: 31.5rem;
-    }
     .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+2){
-        padding-top: 16.5rem;
         height: 54%;
     }
-    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+2)::after{
-        height: 15.5rem;
-    }
     .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+3){
-        padding-top: 12rem;
         height: 41%;
-
-    }
-    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+3)::after{
-        height: 11rem;
     }
     .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+5),
     .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+6){
-        padding-top: 14rem;
         height: calc(50% - 1rem);
-    }
-    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+5)::after,
-    .mainWrapper-activity-bloc-activityArea-link:nth-child(6n+6)::after{
-        padding-top: initial;
-        height: 13rem;
     }
     .mainWrapper-activity-bloc-activityArea-link-title{
         font-weight: 600;
