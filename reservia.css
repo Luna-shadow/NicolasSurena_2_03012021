@@ -152,7 +152,7 @@ a{
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
 
-    /* POUR UN PEU D'HUMOUR, LE DECOMMENTER. HS AVEC LA MAQUETTE MAIS RAJOUTE UNE TOUCHE DE FUN => + L.627 */
+    /* POUR UN PEU D'HUMOUR, LE DECOMMENTER. HS AVEC LA MAQUETTE MAIS RAJOUTE UNE TOUCHE DE FUN => + L.676 */
 
     /* transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
     -webkit-transition: background-color 0.5s, right 1s 0.5s cubic-bezier(.29,.09,.49,.99), transform 3s;
@@ -289,8 +289,8 @@ a{
     box-sizing: border-box;
     box-shadow: 0 0 1rem #cccccc;
     display: inline-flex;
-        align-items: stretch;
-        justify-content: stretch;
+    align-items: stretch;
+    justify-content: stretch;
     height: 11rem;
     margin: 0.5rem 0;
     max-width: 40rem;
@@ -302,6 +302,18 @@ a{
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    transition: transform 0.3s ;
+    -webkit-transition: transform 0.2s ;
+    -moz-transition: transform 0.2s ;
+    -ms-transition: transform 0.2s ;
+    -o-transition: transform 0.2s ;
+}
+.mainWrapper-accomodation-aside-popularArea-link:hover{
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
 }
 .mainWrapper-accomodation-aside-popularArea-link::after{
     background-position: center;
@@ -375,6 +387,18 @@ a{
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    transition: transform 0.3s ;
+    -webkit-transition: transform 0.3s ;
+    -moz-transition: transform 0.3s ;
+    -ms-transition: transform 0.3s ;
+    -o-transition: transform 0.3s ;
+}
+.mainWrapper-accomodation-results-accomodationArea-link:hover{
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
 }
 .mainWrapper-accomodation-results-accomodationArea-link::after{
     background-position: center;
@@ -432,6 +456,19 @@ a{
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 2rem;
+    transition: transform 0.2s, color 0.2s;
+    -webkit-transition: transform 0.2s, color 0.2s;
+    -moz-transition: transform 0.2s, color 0.2s;
+    -ms-transition: transform 0.2s, color 0.2s;
+    -o-transition: transform 0.2s, color 0.2s;
+}
+.mainWrapper-accomodation-results-more:hover{
+    color : #0065FC;
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
 }
 /* ACTIVITY */
 .mainWrapper-activity{
@@ -519,6 +556,18 @@ a{
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    transition: transform 0.3s ;
+    -webkit-transition: transform 0.2s ;
+    -moz-transition: transform 0.2s ;
+    -ms-transition: transform 0.2s ;
+    -o-transition: transform 0.2s ;
+}
+.mainWrapper-activity-bloc-activityArea-link:hover{
+    transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    -moz-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -o-transform: scale(0.99);
 }
 .mainWrapper-activity-bloc-activityArea-link:nth-of-type(1){
     background-image: url('medias/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
